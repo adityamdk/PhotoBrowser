@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/titleOfPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignLeft="@+id/full_image_view"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/full_image_view"
+            android:lines="2"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="@string/some_text"
+            android:background="@drawable/boundry"
+            android:layout_alignStart="@+id/full_image_view"
+            android:layout_alignEnd="@+id/full_image_view" />
+
+        <ImageView
+            android:id="@+id/full_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/titleOfPhoto"
+            android:layout_margin="4dp"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
